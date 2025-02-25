@@ -1,0 +1,18 @@
+{
+  "repositories": [
+    {
+      "name": "source",
+      "registry": "registryA.com",
+      "suffix": "team-a"
+    },
+    {
+      "name": "target",
+      "additionalNames": ["teamB"],
+      "registry": "registryB.com",
+      "suffix": "team-b",
+      "destinationMappings": {
+        "application-x": "external/team-a/application-x"
+      }
+    }
+  ]
+}
