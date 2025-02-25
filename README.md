@@ -15,11 +15,11 @@ docker tag registryA.com/team-a/application-x:123 registryB.com/team-b/external/
 docker push registryB.com/team-b/external/team-a/application-x:25-02-2025
 ```
 
-Using this app I can do it with single command and without doing some manual string concatenation:
+Using this app I can do it with once prepared `config.json` and single command, without doing some manual string concatenation:
 ```shell
 ./cid -i registryA.com/team-a/application-x:123 -d teamB -t 25-02-2025
 ```
-and following `config.json` used by app:
+`config.json`
 ```json
 {
   "repositories": [
